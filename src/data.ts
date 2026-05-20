@@ -1,12 +1,44 @@
-export const sample = {
+export type ItemStatus = "backlog" | "active" | "blocked" | "ready" | "done";
+
+export type WorkItem = {
+  id: string;
+  title: string;
+  category: string;
+  owner: string;
+  status: ItemStatus;
+  priority: number;
+  effort: number;
+  friction: number;
+  value: number;
+  due: string;
+  notes: string;
+};
+
+export type QualityCheck = {
+  id: string;
+  label: string;
+  passed: boolean;
+  weight: number;
+};
+
+export const sample: {
+  repoName: string;
+  title: string;
+  subtitle: string;
+  serviceLine: string;
+  description: string;
+  repositoryUrl: string;
+  liveDemoUrl: string;
+  theme: { accent: string; accent2: string; ink: string; soft: string; warm: string };
+  items: WorkItem[];
+  checks: QualityCheck[];
+  deliverables: string[];
+} = {
   "repoName": "foxhen-grant-credit-finder",
   "title": "Grant Credit Finder",
-  "subtitle": "Startup and AI credit tracker",
+  "subtitle": "credit tracker",
   "serviceLine": "Founder ops research",
-  "heroTitle": "Track credible grants, credits, and discount paths.",
-  "heroCopy": "A sample research tracker for startup programs, AI credits, cloud credits, eligibility, deadlines, application effort, and follow-up status.",
-  "primaryAction": "Rank programs",
-  "secondaryAction": "Check eligibility",
+  "description": "Rank fictional grants and credit programs by fit, friction, value, deadline, and application readiness.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-grant-credit-finder",
   "liveDemoUrl": "https://foxhen-grant-credit-finder.vercel.app",
   "theme": {
@@ -14,115 +46,124 @@ export const sample = {
     "accent2": "#7ed0ad",
     "ink": "#0b0920",
     "soft": "#f0edff",
-    "warm": "#e5fff5",
-    "surface": "#fffaf4",
-    "muted": "#5c667a",
-    "border": "rgba(7, 18, 31, 0.12)"
+    "warm": "#e5fff5"
   },
-  "metrics": [
+  "items": [
     {
-      "label": "Programs tracked",
-      "value": "26",
-      "note": "sample list"
-    },
-    {
-      "label": "Low-friction fits",
-      "value": "8",
-      "note": "high priority"
-    },
-    {
-      "label": "Credit potential",
-      "value": "$7.5k",
-      "note": "fictional estimate"
-    }
-  ],
-  "stages": [
-    {
-      "label": "Discover",
-      "detail": "Collect official program links, value, deadline, and eligibility language.",
-      "status": "ready",
-      "owner": "Research",
-      "index": 1
-    },
-    {
-      "label": "Qualify",
-      "detail": "Rank by fit, friction, payout speed, and business usefulness.",
-      "status": "active",
-      "owner": "Studio",
-      "index": 2
-    },
-    {
-      "label": "Prepare",
-      "detail": "List exact info needed before any application is submitted.",
-      "status": "waiting",
-      "owner": "Chris",
-      "index": 3
-    },
-    {
-      "label": "Track",
-      "detail": "Maintain status, reminders, and reuse notes for future applications.",
-      "status": "queued",
-      "owner": "Ops",
-      "index": 4
-    }
-  ],
-  "workItems": [
-    {
+      "id": "gra-1",
       "title": "AI credits",
-      "detail": "Rank provider credit paths by friction",
-      "status": "ready"
+      "category": "Intake",
+      "owner": "Chris",
+      "status": "active",
+      "priority": 5,
+      "effort": 2,
+      "friction": 1,
+      "value": 5,
+      "due": "Today",
+      "notes": "Sample credit tracker work item for founder ops research."
     },
     {
-      "title": "Cloud programs",
-      "detail": "Compare eligibility wording",
-      "status": "active"
+      "id": "gra-2",
+      "title": "Cloud program",
+      "category": "Build",
+      "owner": "Fox & Hen",
+      "status": "backlog",
+      "priority": 4,
+      "effort": 4,
+      "friction": 2,
+      "value": 4,
+      "due": "24h",
+      "notes": "Sample credit tracker work item for founder ops research."
     },
     {
-      "title": "Accelerator perk",
-      "detail": "Waiting on business profile detail",
-      "status": "waiting"
+      "id": "gra-3",
+      "title": "Founder perk",
+      "category": "Review",
+      "owner": "Buyer",
+      "status": "blocked",
+      "priority": 3,
+      "effort": 3,
+      "friction": 4,
+      "value": 4,
+      "due": "48h",
+      "notes": "Sample credit tracker work item for founder ops research."
     },
     {
+      "id": "gra-4",
+      "title": "Eligibility note",
+      "category": "Export",
+      "owner": "Automation",
+      "status": "ready",
+      "priority": 4,
+      "effort": 2,
+      "friction": 2,
+      "value": 3,
+      "due": "This week",
+      "notes": "Sample credit tracker work item for founder ops research."
+    },
+    {
+      "id": "gra-5",
+      "title": "Application gap",
+      "category": "Intake",
+      "owner": "QA",
+      "status": "backlog",
+      "priority": 2,
+      "effort": 1,
+      "friction": 1,
+      "value": 3,
+      "due": "Waiting",
+      "notes": "Sample credit tracker work item for founder ops research."
+    },
+    {
+      "id": "gra-6",
       "title": "Follow-up list",
-      "detail": "Queued for tracking export",
-      "status": "queued"
+      "category": "Build",
+      "owner": "Chris",
+      "status": "done",
+      "priority": 5,
+      "effort": 5,
+      "friction": 3,
+      "value": 5,
+      "due": "Next pass",
+      "notes": "Sample credit tracker work item for founder ops research."
+    }
+  ],
+  "checks": [
+    {
+      "id": "payer",
+      "label": "Payer or owner is clear",
+      "passed": true,
+      "weight": 18
+    },
+    {
+      "id": "deliverable",
+      "label": "Deliverable has acceptance criteria",
+      "passed": true,
+      "weight": 18
+    },
+    {
+      "id": "friction",
+      "label": "Account/access friction is documented",
+      "passed": false,
+      "weight": 14
+    },
+    {
+      "id": "handoff",
+      "label": "Handoff package is generated",
+      "passed": false,
+      "weight": 16
+    },
+    {
+      "id": "reuse",
+      "label": "Repeatable pipeline note exists",
+      "passed": true,
+      "weight": 12
     }
   ],
   "deliverables": [
-    {
-      "title": "Opportunity board",
-      "detail": "Ranked programs with value, deadline, and application effort."
-    },
-    {
-      "title": "Eligibility memo",
-      "detail": "Clear gaps to resolve before applying."
-    },
-    {
-      "title": "Tracking system",
-      "detail": "Status and reminder fields for repeatable research."
-    }
-  ],
-  "timeline": [
-    {
-      "time": "0-2 hrs",
-      "detail": "Gather official links and terms"
-    },
-    {
-      "time": "2-6 hrs",
-      "detail": "Rank and document top fits"
-    },
-    {
-      "time": "6-10 hrs",
-      "detail": "Package application-readiness notes"
-    }
-  ],
-  "proof": [
-    "Supports the request for credits and grants that offset AI work.",
-    "Separates research from applications requiring human approval.",
-    "Contains sample program data only, not live scraped claims."
+    "Ranked board",
+    "Editable item inspector",
+    "Readiness checklist",
+    "Exportable handoff report"
   ]
-} as const;
-
-export type StageStatus = "ready" | "active" | "waiting" | "queued";
-export type DemoStage = (typeof sample.stages)[number];
-export type WorkItem = (typeof sample.workItems)[number];
+};
