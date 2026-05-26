@@ -25,13 +25,25 @@
   "description": "Grant and AI-credit finder for tracking eligibility, deadlines, value, friction, and application readiness.",
   "homepage": "https://foxhen-grant-credit-finder.vercel.app",
   "keywords": [
-    "grants",
     "ai-credits",
+    "checklist",
+    "credits",
+    "dashboard",
+    "eligibility",
+    "finder",
+    "founder",
+    "fox-and-hen",
+    "grant",
+    "grants",
     "opportunities",
-    "workflow",
+    "perk",
     "react",
+    "small-business",
+    "startup",
+    "tracker",
     "typescript",
     "vite",
-    "small-business"
+    "workflow",
+    "workflow-tools"
   ]
 }

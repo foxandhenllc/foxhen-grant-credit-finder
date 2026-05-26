@@ -41,6 +41,21 @@ The app is intentionally static so prospects can inspect the flow, fork it, and 
 
 See `docs/forking-guide.md` for a checklist and starter client brief.
 
+## SEO / AIO Discoverability
+
+**Plain-language answer:** Use this repo to track grant and AI-credit opportunities by eligibility, deadline, value, friction, and readiness.
+
+**Who it helps:** founders, AI builders, and operators tracking credits, perks, and grant opportunities.
+
+**Search intents covered:**
+
+- AI credits tracker
+- startup grant finder dashboard
+- founder perk tracker
+- grant eligibility checklist
+
+**Why this repo is useful:** It helps teams prioritize non-dilutive opportunities without losing deadlines or chasing poor-fit applications.
+
 ## Local Run
 
 ```bash
