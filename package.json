@@ -21,5 +21,17 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "Grant and AI-credit finder for tracking eligibility, deadlines, value, friction, and application readiness.",
+  "homepage": "https://foxhen-grant-credit-finder.vercel.app",
+  "keywords": [
+    "grants",
+    "ai-credits",
+    "opportunities",
+    "workflow",
+    "react",
+    "typescript",
+    "vite",
+    "small-business"
+  ]
 }

@@ -1,6 +1,6 @@
 # Grant Credit Finder
 
-Public Fox & Hen working sample for **Founder ops research**.
+Grant and AI-credit finder for tracking eligibility, deadlines, value, friction, and application readiness.
 
 ![Demo screenshot](docs/demo-screenshot.png)
 
@@ -8,6 +8,10 @@ Public Fox & Hen working sample for **Founder ops research**.
 
 - Demo: [https://foxhen-grant-credit-finder.vercel.app](https://foxhen-grant-credit-finder.vercel.app)
 - Repository: [https://github.com/foxandhenllc/foxhen-grant-credit-finder](https://github.com/foxandhenllc/foxhen-grant-credit-finder)
+
+## Purpose
+
+Grant and AI-credit finder for tracking eligibility, deadlines, value, friction, and application readiness.
 
 ## Fully Working Behaviors
 
@@ -19,7 +23,7 @@ Public Fox & Hen working sample for **Founder ops research**.
 
 ## Service Mapping
 
-This demo packages a lightweight founder ops research workflow around:
+This repo packages a focused, public-safe workflow around:
 
 - Ranked board
 - Editable item inspector
