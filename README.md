@@ -6,7 +6,7 @@ Grant and AI-credit finder for tracking eligibility, deadlines, value, friction,
 
 ## Live Demo
 
-- Demo: [https://foxhen-grant-credit-finder.vercel.app](https://foxhen-grant-credit-finder.vercel.app)
+- Demo: [https://freetoolsforpeople.com/grant-credit-finder](https://freetoolsforpeople.com/grant-credit-finder)
 - Repository: [https://github.com/foxandhenllc/foxhen-grant-credit-finder](https://github.com/foxandhenllc/foxhen-grant-credit-finder)
 
 ## Purpose

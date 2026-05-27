@@ -40,7 +40,7 @@ export const sample: {
   "serviceLine": "Founder ops research",
   "description": "Rank fictional grants and credit programs by fit, friction, value, deadline, and application readiness.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-grant-credit-finder",
-  "liveDemoUrl": "https://foxhen-grant-credit-finder.vercel.app",
+  "liveDemoUrl": "https://freetoolsforpeople.com/grant-credit-finder",
   "theme": {
     "accent": "#4a3c8f",
     "accent2": "#7ed0ad",

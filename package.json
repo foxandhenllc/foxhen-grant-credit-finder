@@ -23,7 +23,7 @@
     "node": ">=20"
   },
   "description": "Grant and AI-credit finder for tracking eligibility, deadlines, value, friction, and application readiness.",
-  "homepage": "https://foxhen-grant-credit-finder.vercel.app",
+  "homepage": "https://freetoolsforpeople.com/grant-credit-finder",
   "keywords": [
     "ai-credits",
     "checklist",
